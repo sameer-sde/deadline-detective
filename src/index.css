@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #080604;
+  font-family: 'Crimson Pro', Georgia, serif;
+  color: #d4c9b0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(180,140,60,0.25); border-radius: 2px; }
+
+input, button, textarea { font-family: 'Crimson Pro', Georgia, serif; }
+input:focus { outline: none; }
+input::placeholder { color: #3a3020; }
+textarea:focus { outline: none; }
+textarea::placeholder { color: #3a3020; }
+
+@keyframes flicker {
+  0%,100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.6; }
+  94% { opacity: 1; }
+  96% { opacity: 0.8; }
+  97% { opacity: 1; }
+}
+
+@keyframes lightning {
+  0%,100% { opacity: 0; }
+  2% { opacity: 0.08; }
+  4% { opacity: 0; }
+  50% { opacity: 0; }
+  52% { opacity: 0.05; }
+  54% { opacity: 0; }
+}
+
+@keyframes rain {
+  0% { transform: translateY(-100px); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fogMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes pulse {
+  0%,100% { opacity: 1; box-shadow: 0 0 6px rgba(200,160,60,0.5); }
+  50% { opacity: 0.6; box-shadow: 0 0 12px rgba(200,160,60,0.8); }
+}
+
+@keyframes rankReveal {
+  0% { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+  60% { transform: scale(1.1) rotate(2deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes paperSlide {
+  0% { transform: translateY(-40px) rotate(-2deg); opacity: 0; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 1; }
+}
+
+.shake { animation: shake 0.4s ease; }
+.flicker { animation: flicker 8s infinite; }
