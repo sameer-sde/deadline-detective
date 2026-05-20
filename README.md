@@ -2,7 +2,7 @@
 
 > An AI-powered 1920s murder mystery game. Interrogate suspects, collect clues, and name the killer — before your turns run out.
 
-**Live Demo:** [deadline-detective.vercel.app](https://deadline-detective.vercel.app/)
+**Live Demo:** [deadline-detective.vercel.app](https://deadline-detective.vercel.app))
 
 ![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite)
